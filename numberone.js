@@ -1,22 +1,9 @@
-function anyTwoNumbers(numbersList, k)
+function anyTwo(nums, k)
 {
-    return numbersList
-for (i=0; i++; i<numbersList.length)
-    {
-        numberToFind = k - numbersList[i];
-        console.log(numberToFind)
-        // if (numbersList.find(number => k-number == numberToFind))
-        //     {
-        //         console.log(number)
-        //         return true
-        //     }
-        // else 
-        //     {
-        //         console.log(number)
-        //         return false
-        //     }
-    }
-}
-
-
-anyTwoNumbers([10, 5, 3, 7], 17);
+    while (nums.length>1) {
+        numToFind = nums.pop()
+        for (i=0; i<nums.length; i++) {
+            if (nums[i] + numToFind == k) {
+                return true}}}
+    return false}
+console.log(anyTwo([10,3,6,8], 17))
